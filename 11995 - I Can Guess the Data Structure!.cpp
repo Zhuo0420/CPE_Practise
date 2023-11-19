@@ -25,15 +25,15 @@ int main()
 				if (!lineQ.empty())	tmpQ = lineQ.front();
 				if (!lineS.empty())	tmpS = lineS.top();
 				if (!linePQ.empty())	tmpPQ = linePQ.top();					
-				if (tmpQ) {
+				if (Q) {
 					if (!lineQ.empty() && input == tmpQ)		lineQ.pop();
 					else	Q = false;
 				}				
-				if (tmpS) {
+				if (S) {
 					if (!lineS.empty() && input == tmpS)		lineS.pop();
 					else	S = false;
 				}
-				if (tmpPQ) {
+				if (PQ) {
 					if (!linePQ.empty() && input == tmpPQ)		linePQ.pop();
 					else	PQ = false;	
 				}
