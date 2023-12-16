@@ -64,7 +64,7 @@ int main()
 			int a, b;
 			cin >> a >> b;
 			a--; b--;
-			if (findset(a) == findset(b))	cout << "Y" << endl;
+			if (findset(a) == findset(b))	cout << "Y" << endl;    //a, b 兩點的路徑皆為 bridge 組成
 			else	cout << "N" << endl;
 		}
 		cout << "-" << endl;
