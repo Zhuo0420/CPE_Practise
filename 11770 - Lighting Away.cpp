@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <stack>
 using namespace std;
@@ -38,8 +38,8 @@ void tarjan(int u) {
 
 void isfollow(int u) {
     for (int v : ve[u]) {
-        if (lead[v] != v)    follow[v]++;
-        if (lead[v] != lead[u])   follow[lead[v]]++;
+        if (lead[v] != v)    follow[v]++;       //v 會被 u 燈開啟
+        if (lead[v] != lead[u])   follow[lead[v]]++;        //如果可以從 u 強通道走道 v 強通道 ，就刪掉 v 強通道的開燈點
     }
 }
 
