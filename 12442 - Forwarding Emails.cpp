@@ -28,7 +28,7 @@ int main()
         }
         int tmpAns = 0, maxPath = 0;
         for (int i = 0; i < num; i++) {               
-            if (isVisited[i])    continue;
+            if (isVisited[i])    continue;            //已被 visited 過，再跑一次 dfs 結果會 <= 上一次使用其他點當頭並經過此點的總人數
             isVisited.assign(num, false);
             dfs(i);                        
             if (maxPath < visitedNode)   tmpAns = i, maxPath = visitedNode;
